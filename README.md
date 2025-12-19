@@ -1,61 +1,23 @@
-﻿# gcp-app-engine-profile
-🚀 How to Use This Project & Deploy on Google Cloud (App Engine)
+# 🚀 Node.js App Deployment on Google Cloud App Engine
 
-Follow these steps to deploy this Node.js application to Google App Engine (Standard Environment).
+This is a simple Node.js web application deployed using **Google Cloud App Engine (Standard Environment)**.  
+It is beginner-friendly and ideal for learning how to deploy applications on GCP.
 
-1️⃣ Clone the Repository
-git clone https://github.com/<your-username>/<your-repo-name>.git
+---
+
+## 📌 Prerequisites
+
+Before starting, make sure you have:
+
+- Node.js **v20**
+- A Google Cloud account
+- A GCP Project with **Billing enabled**
+- Google Cloud SDK (`gcloud`) installed and authenticated
+
+---
+
+## 📂 Clone the Repository
+
+```bash
+[git clone https://github.com/<your-username>/<your-repo-name>.git](https://github.com/laxmibaghel/gcp-app-engine-profile)
 cd <your-repo-name>
-
-2️⃣ Run the App Locally (Optional but Recommended)
-
-Make sure Node.js 20 is installed.
-
-npm install
-node app.js
-
-
-Open in browser:
-
-http://localhost:8080
-
-3️⃣ Create or Select a GCP Project
-
-Go to Google Cloud Console
-
-Create a new project or select an existing one
-
-Enable Billing (free tier is sufficient)
-
-Set the project:
-
-gcloud config set project YOUR_PROJECT_ID
-
-4️⃣ Enable Required GCP Services
-gcloud services enable appengine.googleapis.com
-gcloud services enable cloudbuild.googleapis.com
-
-5️⃣ Initialize App Engine (First Time Only)
-gcloud app create
-
-
-Choose a region when prompted
-
-This step is required only once per project
-
-6️⃣ Deploy the Application
-gcloud app deploy
-
-
-Confirm by typing Y when asked.
-
-After deployment, access the app at:
-
-https://YOUR_PROJECT_ID.appspot.com
-
-7️⃣ Update the App
-
-After making code changes, redeploy using:
-
-gcloud app deploy
-
